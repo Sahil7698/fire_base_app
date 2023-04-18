@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "177351047383",
+    "project_id": "fir-sahil-eb62b",
+    "storage_bucket": "fir-sahil-eb62b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177351047383:android:7798685cc9a9feec079892",
+        "android_client_info": {
+          "package_name": "com.firebaseSP.fire_base_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177351047383-b14hgvhdi9f80kbm76oeunfc2deu189p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQF1GP9Lu2vMbP7wcp7GadGrLKxai4NjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177351047383-b14hgvhdi9f80kbm76oeunfc2deu189p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
