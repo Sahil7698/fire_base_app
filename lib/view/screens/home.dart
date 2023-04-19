@@ -33,7 +33,6 @@ class _Home_PageState extends State<Home_Page> {
           IconButton(
             onPressed: () async {
               await FirebaseAuthHelper.firebaseAuthHelper.logOut();
-
               Navigator.of(context)
                   .pushNamedAndRemoveUntil('login_page', (route) => false);
             },

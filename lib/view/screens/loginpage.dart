@@ -1,4 +1,5 @@
 import 'package:fire_base_app/helper/fire_base_helper.dart';
+import 'package:fire_base_app/helper/local_notification_helpers.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -10,6 +11,17 @@ class Login_Page extends StatefulWidget {
 }
 
 class _Login_PageState extends State<Login_Page> {
+  @override
+  initNotification() async {
+    await LocalNotificationHelper.localNotificationHelper
+        .initLocalNotifications();
+  }
+
+  void initState() {
+    super.initState();
+    initNotification();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,6 +35,16 @@ class _Login_PageState extends State<Login_Page> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            ElevatedButton(
+                onPressed: () {}, child: const Text("Simple Notification")),
+            ElevatedButton(
+                onPressed: () {}, child: const Text("Schedule Notification")),
+            ElevatedButton(
+                onPressed: () {},
+                child: const Text("Big Picture Notification")),
+            ElevatedButton(
+                onPressed: () {},
+                child: const Text("Media Style Notification")),
             ElevatedButton(
               onPressed: () async {
                 User? user = await FirebaseAuthHelper.firebaseAuthHelper
