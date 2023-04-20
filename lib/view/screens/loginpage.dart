@@ -36,14 +36,28 @@ class _Login_PageState extends State<Login_Page> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-                onPressed: () {}, child: const Text("Simple Notification")),
+                onPressed: () async {
+                  await LocalNotificationHelper.localNotificationHelper
+                      .showSimpleNotification();
+                },
+                child: const Text("Simple Notification")),
             ElevatedButton(
-                onPressed: () {}, child: const Text("Schedule Notification")),
+                onPressed: () async {
+                  await LocalNotificationHelper.localNotificationHelper
+                      .showScheduleNotification();
+                },
+                child: const Text("Schedule Notification")),
             ElevatedButton(
-                onPressed: () {},
+                onPressed: () async {
+                  await LocalNotificationHelper.localNotificationHelper
+                      .showBigPictureNotification();
+                },
                 child: const Text("Big Picture Notification")),
             ElevatedButton(
-                onPressed: () {},
+                onPressed: () async {
+                  await LocalNotificationHelper.localNotificationHelper
+                      .showMediaStyleNotification();
+                },
                 child: const Text("Media Style Notification")),
             ElevatedButton(
               onPressed: () async {
